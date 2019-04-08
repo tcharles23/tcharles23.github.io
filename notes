@@ -1,0 +1,96 @@
+// statement is code that performs an action
+
+// expressions- code that resolves to a value
+// all expressions are statement not the other way around 
+
+// expression examples - 
+// var myName = 'liz';
+
+/* conditional statements- directing your code based on conditional
+- each conditional is an expression.
+evaluates to boolean value
+- theres more than one kind
+-if/else if/ else
+-switch 
+*/
+
+/*  Loops- repeating a block of code a set amount of times;
+- while loop
+- for in loop
+- for loop
+-While loop - How long should I loop?
+Ex 
+
+var myAge = 25;
+
+while (myAge < 50) {
+* code to run multiples times
+
+myAge ++; // manipulate conditonal inside loop
+
+}
+
+- for loop - 3 conditional
+- Where should I start?
+- How long should I loop?
+- what changes each I loop?
+ex 
+
+for (var index = 0; index < 5; index ++) {
+// run code here
+}
+
+- for-in Loop - 2 condtionals
+- How will you refer to keys?
+- Which object do you want to loop over?
+
+ex
+
+for(var key in object) {
+// run code here
+}
+
+*/
+
+/* Object access - 
+arrays - bracket notation... use []
+object - bracket & dot notation... use {}
+
+*/
+
+/* properties - static values stored on an object
+- string.length
+- methods - reproducible actions based on objects
+-string.toLowerCase();
+*/
+
+/* Scope - 
+- imagine your code as nested boxes 
+- global scope 
+- function 
+- varibales can be used in child scopes 
+- cannot be used in parent scopes 
+- not all scopes are created equal 
+
+*/
+
+/* Hoisting -
+- varibable declarations and function declarations
+- taken to top of their scope 
+- different types hoisted differently 
+... varibables - only name 
+... functions - name and body 
+- happens at runtime
+
+- Variables
+... can be declared
+... available anywhere in scope
+.. before or after declarations
+- no value until assigned 
+
+- Functions -
+- can be declared anywhere 
+- available anywhere in scope 
+... before or after declarations
+- assigned value at all times 
+*/
