@@ -29,10 +29,10 @@
 *
 */
 
-// number:  a number
+// number: numberic datatype
 var num = 5; 
 
-// string: 
+// string: a character datatype stored inside parenthesis 
 let str = "this is a string"; 
 
 // boolean:  true or false
@@ -40,14 +40,17 @@ console.log(true);
 console.log(false);
 
 // NaN: not a number 
-// if you check type of a value thats not a number and give you back true or false 
-console.log(isNaN(33)) // prints false
+// you check type of a value is a number and it will give you back boolean {true or false} 
+typeof NaN; // prints 'number'
+console.log(isNaN(33)); // prints false
+console.log(isNaN('ititi')); // prints true
 
 // undefined: is property of the global object. 
 var name;
 console.log(name); // prints undefined 
 
-// null: expresses a lack of identification, indicating that a variable points to no object
+// null: a variable points to no object
+var nothing = null; 
 
 // array: is a collection of data stored in braces. []
 
@@ -60,7 +63,7 @@ let myObj = { favColor: "blue", FavFood: "pizza"};
 // You use the keyword function with () {};
 function realName(name1, name2) {
     
-    return name1 + name2;
+    console.log(name1 + ' ' + name2);
    // run code here 
 }
 console.log("titus", "charles"); // prints titus charles 
@@ -71,3 +74,23 @@ console.log("titus", "charles"); // prints titus charles
 console.log(Infinity); // prints Infinity
 console.log(-Infinity); // prints -Infinity
 console.log(Infinity +1); // prints Infinity
+
+//copy by value
+var money = 1001;
+var newMoney = money; // the value stored in money copied into newMoney
+newMoney = 3000; // changing the value in newMoney doesnt changed the value assigned to money
+console.log(money); // prints 1001
+
+// copy by reference: copying a value stored in a object makes a reference of that data. 
+let obj1 = {
+    car: 'audi',
+    color: 'black',
+    speed: 'V6',
+};
+
+obj1['speed'] = 'V8'; 
+obj1['cost'] = '33,000';
+
+let obj2 = obj1;
+obj2['color'] = 'blue';
+console.log(obj2); // prints { car: 'audi', color: 'blue', speed: 'V8', cost: '33,000' }

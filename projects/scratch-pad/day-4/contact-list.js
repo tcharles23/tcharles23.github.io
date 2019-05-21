@@ -73,6 +73,7 @@ function makeContactList() {
             
         }, 
         removeContact: function(contact) {
+        
             // loop through contact 
             for(let i = 0; i < contacts.length; i++) {
                 if(contacts[i] === contact) {

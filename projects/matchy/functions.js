@@ -23,13 +23,15 @@
 //////////////////////////////////////////////////////////////////////
 function search(animals, name) {
     for(let i = 0; i < animals.length; i++) {
-        console.log(animals[i]);
-        if(animals[i] === name) {
+        // console.log(animals[i]);
+        if(animals[i].name === name) {
+            // console.log(animals[i]);
+            // console.log(name);
             return animals[i];
-        } else {
-            return null;
-        }
+        } 
+        
     }
+    return null;
 }
 
 
@@ -44,7 +46,19 @@ function search(animals, name) {
 //////////////////////////////////////////////////////////////////////
 // Step 2 - Replace //////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
-
+function replace(animals, name, replacement) {
+    
+    for(var i = 0; i < animals.length; i++) {
+        console.log(i);
+    if(animals[i].name === name) {
+    
+        animals[i] = replacement;
+        // return replacement 
+    } 
+        
+    } 
+    return;
+}
 
 
 
@@ -58,7 +72,15 @@ function search(animals, name) {
 //////////////////////////////////////////////////////////////////////
 // Step 3 - Remove ///////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
-
+function remove(animals, name) {
+    for(var i = 0; i < animals.length; i++) {
+        
+    if(animals[i].name === name) {
+       animals.shift();
+    }
+    
+    }
+}
 
 
 
@@ -75,7 +97,17 @@ function search(animals, name) {
 //////////////////////////////////////////////////////////////////////
 // Step 4 - Create ///////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
-
+function add(animals, animal) {
+   for(var i = 0; i < animals.length; i++) {
+       if(animals[i].name === animal.name) {
+         
+         return null;
+       
+   }
+   }
+   animals.push(animal);
+    // console.log(animals);
+}
 
 
 /**
